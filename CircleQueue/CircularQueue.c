@@ -8,7 +8,7 @@ void QueueInit(Queue* pq)
 	pq->rear = 0;
 }
 
-int NextPos(int pos) // 원형 큐의 핵심 알고리즘!
+int NextPos(int pos) // the important algorithm of circle Queue 
 {
 	if (pos == QUE_LEN - 1)
 		return 0;
