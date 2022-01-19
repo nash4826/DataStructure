@@ -8,4 +8,9 @@
 ## 학습 방향
 - Header File과 ADT를 파악 후 직접 구현
 - Pointer 와 Function Pointer 활용
-- 
+- Git commit,push,pull 등을 체험
+
+## Tool
+- Visual Studio 2019
+- Git
+- cmder
