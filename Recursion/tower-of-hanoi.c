@@ -1,4 +1,3 @@
-#define _CRT_SECURE_NO_WARNINGS
 #include <stdio.h>
 /*
 	*Tower of Hanoi*
@@ -45,56 +44,57 @@ int main()
 }
 
 /*
-				Sample
+                                Sample
 
-		input	 	  |			output
-				  |
-             disk : 3		  |   		Move disk 1 from A to C
-				  |		Move disk 2 from A to B
-				  |		Move disk 1 from C to B
-				  |		Move disk 3 from A to C
-				  |		Move disk 1 from B to A
-				  |		Move disk 2 from B to C
-				  |		Move disk 1 from A to C
-	
+                input             |                     output
+                                  |
+              disk : 3            |             Move disk 1 from A to C
+                                  |             Move disk 2 from A to B
+                                  |             Move disk 1 from C to B
+                                  |             Move disk 3 from A to C
+                                  |             Move disk 1 from B to A
+                                  |             Move disk 2 from B to C
+                                  |             Move disk 1 from A to C
+
 
 ---------------------------------------------------------------------------
-	
-	    **Image illustration for 3 disks** 
 
 
-	standby						step 1
-						
-    A	   B	  C				A	  B	   C
-
-    |	   |	  |				|	  |	   |
-    |      |	  |				|         |	   |
-   ###(1)  |      |				|         |	   |
-  #####(2) |      |		  	      #####       |	   |
-_#######(3)|______|__			    _#######______|_______###_					    
+                   **Image illustration for 3 disks**
 
 
+        standby                                         step 1
 
-         step 2                  step 3			step 4
+    A      B      C                             A         B        C
 
-    A	   B	  C	   A	   B	  C	   A	   B       C
-
-    |	   |	  |        |	   |	  |	   |       |       |
-    |      |	  |	   |       |	  |	   |       |       |
-    |      |      |	   |       |	  |	   |       |       |
-    |      |      |        |      ###     |	   |      ###	   |
-_#######_#####___###__	#######__#####____|___	 __|_____#####__#######__
+    |      |      |                             |         |        |
+    |      |      |                             |         |        |
+   ###(1)  |      |                             |         |        |
+  #####(2) |      |                           #####       |        |
+_#######(3)|______|__                       _#######______|_______###_
 
 
 
-	 step 5                  step 6			step 7
+         step 2                  step 3	                 step 4
 
-    A	   B	  C	    A	   B	  C	     A        B	       C
+    A      B      C        A       B      C        A       B       C
 
-    |	   |	  |	    |	   |	  |	     |	      |	       |
-    |      |	  |	    |      |	  |	     |	      |        |
-    |      |      |	    |      |	  |	     |        |	      ### 
-    |      |      |         |      |    ##### 	     |        |	     #####
+    |      |      |        |       |      |        |       |       |
+    |      |      |        |       |      |        |       |       |
+    |      |      |        |       |      |        |       |       |
+    |      |      |        |      ###     |        |      ###      |
+_#######_#####___###__  #######__#####____|___   __|_____#####__#######__
+
+
+
+         step 5                  step 6	                    step 7
+
+    A      B      C         A      B      C          A        B	       C
+
+    |      |      |         |      |      |          |	      |	       |
+    |      |      |         |      |      |          |        |        |
+    |      |      |         |      |      |          |        |	      ###
+    |      |      |         |      |    #####        |        |	     #####
 ___###___#####_#######_	___###_____|___#######_    __|________|_____#######__
 
 
