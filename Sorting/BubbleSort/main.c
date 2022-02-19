@@ -1,9 +1,9 @@
 #include <stdio.h>
 
 /*
-	*버블 소트*
+	*bubble Sort*
 	
-	시간복잡도 O(n^2)
+	* Time Complexity : O(n^2)
 	
 */
 
